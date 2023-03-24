@@ -46,13 +46,13 @@ public class Test {
         library.registerReader(bookReader2);
 
 
-        bookReader2.setBooks(Collections.singletonList(library.giveBook(b1)));
-        bookReader2.setBooks(Collections.singletonList(library.giveBook(b2)));
-        bookReader2.setBooks(Collections.singletonList(library.giveBook(b3)));
-        bookReader2.setBooks(Collections.singletonList(library.giveBook(b4)));
+        bookReader2.setBook(library.giveBook(b1));
+        bookReader2.setBook(library.giveBook(b2));
+        bookReader2.setBook(library.giveBook(b3));
+        bookReader2.setBook(library.giveBook(b4));
 
-        bookReader1.setBooks(Collections.singletonList(library.giveBook(b5)));
-        bookReader1.setBooks(Collections.singletonList(library.giveBook(b6)));
+        bookReader1.setBook(library.giveBook(b5));
+        bookReader1.setBook(library.giveBook(b6));
 
         System.out.println("Before serialization");
         System.out.println(library);

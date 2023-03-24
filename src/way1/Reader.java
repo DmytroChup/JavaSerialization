@@ -16,6 +16,10 @@ public class Reader extends Person implements Serializable {
         this.books = new ArrayList<>();
     }
 
+    public void setBook(Book book) {
+        books.add(book);
+    }
+
     public void setBooks(List<Book> books) {
         this.books = books;
     }
